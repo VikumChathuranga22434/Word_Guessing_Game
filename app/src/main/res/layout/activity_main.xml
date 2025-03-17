@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity2">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvWordHint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guess the word!"
+            android:textSize="18sp"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/tvScore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Score: 100"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvTimer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Time: 0s"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etGuess"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your guess"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/btnGuess"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guess" />
+
+        <EditText
+            android:id="@+id/etLetter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter a letter"
+            android:maxLength="1"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/btnLetterCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Check Letter (-5 points)" />
+
+        <Button
+            android:id="@+id/btnWordLength"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Word Length (-5 points)"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/btnTip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Get Tip (-5 points, after 5 attempts)"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/btnNewWord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="New Word"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
